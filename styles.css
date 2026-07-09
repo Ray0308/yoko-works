@@ -366,6 +366,20 @@ nav a:hover { color: #fff; text-shadow: 0 0 15px rgba(88,245,208,.8); }
 .idea-list h3 { margin: 0 0 7px; font-size: clamp(1.15rem, 2vw, 1.65rem); }
 .idea-list p { margin: 0; color: var(--muted); font-size: .8rem; line-height: 1.6; }
 .idea-list small { color: var(--aqua); font-size: .62rem; letter-spacing: .08em; }
+.download-link {
+  display: inline-block;
+  margin-top: 13px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgba(88,245,208,.45);
+  color: var(--aqua);
+  font-size: .7rem;
+  font-weight: 600;
+  transition: border-color .25s, text-shadow .25s;
+}
+.download-link:hover {
+  border-color: var(--aqua);
+  text-shadow: 0 0 14px rgba(88,245,208,.5);
+}
 
 .statement {
   position: relative;

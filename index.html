@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="遊びと仕事のあいだで作った、小さな道具と世界の記録。">
+  <meta name="theme-color" content="#161712">
+  <title>Yoko — Works</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="ambient" aria-hidden="true"></canvas>
+  <div class="veil" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="ページ上部へ">Y<span>O</span>KO</a>
+    <nav aria-label="メインナビゲーション">
+      <a href="#works">Works</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Personal archive / 2026</p>
+      <h1>欲しいものは、<br><em>だいたい作る。</em></h1>
+      <div class="hero-bottom">
+        <p>遊びの世界を広げるもの。<br>仕事の手間を小さくするもの。</p>
+        <a class="round-link" href="#works" aria-label="作品を見る">↓</a>
+      </div>
+      <div class="light-bloom bloom-one" aria-hidden="true"></div>
+      <div class="light-bloom bloom-two" aria-hidden="true"></div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="section-heading">
+        <p class="eyebrow">Selected works</p>
+        <h2>つくったもの</h2>
+        <div class="filters" role="group" aria-label="作品の絞り込み">
+          <button class="filter is-active" data-filter="all" type="button">すべて</button>
+          <button class="filter" data-filter="play" type="button">趣味</button>
+          <button class="filter" data-filter="work" type="button">仕事</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <a class="project project-featured" data-category="play" href="https://ray0308.github.io/owl-rogue/" target="_blank" rel="noreferrer">
+          <div class="visual dungeon">
+            <span class="moon"></span>
+            <span class="owl">◉v◉</span>
+            <span class="steps">⌁ ⌁ ⌁</span>
+          </div>
+          <div class="project-copy">
+            <span class="number">01 / PLAY</span>
+            <h3>もふ梟の迷宮狩り</h3>
+            <p>梟と迷宮へ潜る、手のひらサイズのローグライク。</p>
+            <span class="open">作品をひらく ↗</span>
+          </div>
+        </a>
+
+        <a class="project" data-category="play" href="https://ray0308.github.io/trpg-world-archive/index.html" target="_blank" rel="noreferrer">
+          <div class="visual archive">
+            <span class="planet"></span>
+            <span class="ring"></span>
+            <span class="pin">Y</span>
+          </div>
+          <div class="project-copy">
+            <span class="number">02 / PLAY</span>
+            <h3>YOKOFOLIA</h3>
+            <p>TRPGの世界と住民を、ふわっと残しておく台帳。</p>
+            <span class="open">作品をひらく ↗</span>
+          </div>
+        </a>
+
+        <a class="project" data-category="work" href="https://fukulog-oeltec.glide.page/" target="_blank" rel="noreferrer">
+          <div class="visual fukulog">
+            <span class="bubble">福</span>
+            <span class="line"></span>
+          </div>
+          <div class="project-copy">
+            <span class="number">03 / WORK</span>
+            <h3>フクログ</h3>
+            <p>日々の情報を、迷わず扱えるかたちにした業務アプリ。</p>
+            <span class="open">作品をひらく ↗</span>
+          </div>
+        </a>
+
+        <a class="project" data-category="work" href="https://pine-app-owl.glide.page/" target="_blank" rel="noreferrer">
+          <div class="visual pine">
+            <span class="pinecone">◆<br>◆ ◆<br>◆ ◆ ◆</span>
+          </div>
+          <div class="project-copy">
+            <span class="number">04 / WORK</span>
+            <h3>Pine</h3>
+            <p>現場の動きをすっきり支える、Glide製の業務ツール。</p>
+            <span class="open">作品をひらく ↗</span>
+          </div>
+        </a>
+
+        <a class="project project-wide" data-category="work" href="https://m-yoko-developer-ops.github.io/output-sheet/" target="_blank" rel="noreferrer">
+          <div class="visual sheet">
+            <span class="sheet-title">OUTPUT / SHEET</span>
+            <span class="grid-lines"></span>
+            <span class="cursor"></span>
+          </div>
+          <div class="project-copy">
+            <span class="number">05 / WORK</span>
+            <h3>出数表入力</h3>
+            <p>数字の入力と確認を、軽く・正確にするための専用ツール。</p>
+            <span class="open">作品をひらく ↗</span>
+          </div>
+        </a>
+      </div>
+      <p class="more-note">and more — ローカルで動く、小さな道具たちも準備中。</p>
+    </section>
+
+    <section class="about" id="about">
+      <p class="eyebrow">About this archive</p>
+      <div>
+        <h2>面倒を減らす。<br>面白さを増やす。</h2>
+        <p>ゲーム、記録、業務ツール。ジャンルにこだわらず、自分や誰かが「これ、あるといいな」と思ったものを形にしています。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Yoko</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

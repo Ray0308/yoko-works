@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="遊びと仕事のあいだで作った、小さな道具と世界の記録。">
-  <meta name="theme-color" content="#161712">
+  <meta name="description" content="IT教育、人材育成、業務改善。面倒を減らし、面白さを増やすために必要なものを作るYokoのポートフォリオ。">
+  <meta name="theme-color" content="#02030a">
   <title>Yoko — Works</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,24 +14,59 @@
 <body>
   <canvas id="ambient" aria-hidden="true"></canvas>
   <div class="veil" aria-hidden="true"></div>
+
   <header class="site-header">
     <a class="logo" href="#top" aria-label="ページ上部へ">Y<span>O</span>KO</a>
     <nav aria-label="メインナビゲーション">
-      <a href="#works">Works</a>
       <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#exploring">Exploring</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero">
-      <p class="eyebrow">Personal archive / 2026</p>
+      <p class="eyebrow">IT education / People development / Making</p>
       <h1>欲しいものは、<br><em>だいたい作る。</em></h1>
       <div class="hero-bottom">
-        <p>遊びの世界を広げるもの。<br>仕事の手間を小さくするもの。</p>
-        <a class="round-link" href="#works" aria-label="作品を見る">↓</a>
+        <div>
+          <p class="hero-role">IT教育と人材育成を軸に、<br>仕組みと小さなツールをつくる人。</p>
+          <p class="hero-sub">遊びの世界を広げるもの。仕事の手間を小さくするもの。</p>
+        </div>
+        <a class="round-link" href="#about" aria-label="プロフィールを見る">↓</a>
       </div>
       <div class="light-bloom bloom-one" aria-hidden="true"></div>
       <div class="light-bloom bloom-two" aria-hidden="true"></div>
+    </section>
+
+    <section class="profile" id="about">
+      <div class="profile-intro">
+        <p class="eyebrow">About Yoko</p>
+        <h2>人がちゃんと働ける<br>状態をつくる。</h2>
+      </div>
+      <div class="profile-body">
+        <p class="lead">IT企業の取締役として、IT事業部の運営、教育、人材育成、採用、評価、制度設計に携わっています。</p>
+        <p>技術だけではなく、人が迷わず働き、成長できる仕組みに関心があります。現場感と経営視点の両方を行き来しながら、研修や制度を整え、必要なら自分で小さなツールを作ります。</p>
+        <dl class="profile-facts">
+          <div>
+            <dt>Focus</dt>
+            <dd>IT教育・若手育成・現場定着</dd>
+          </div>
+          <div>
+            <dt>Work</dt>
+            <dd>採用・評価・研修・業務改善</dd>
+          </div>
+          <div>
+            <dt>Build</dt>
+            <dd>AIとローコードを使い、小さく作って改善</dd>
+          </div>
+        </dl>
+        <div class="skill-cloud" aria-label="得意領域">
+          <span>教育設計</span><span>人材育成</span><span>業務改善</span>
+          <span>AI活用</span><span>Glide</span><span>Python</span>
+          <span>GitHub Pages</span><span>Google Workspace</span>
+        </div>
+      </div>
     </section>
 
     <section class="works" id="works">
@@ -48,79 +83,102 @@
       <div class="project-grid">
         <a class="project project-featured" data-category="play" href="https://ray0308.github.io/owl-rogue/" target="_blank" rel="noreferrer">
           <div class="visual dungeon">
-            <span class="moon"></span>
-            <span class="owl">◉v◉</span>
-            <span class="steps">⌁ ⌁ ⌁</span>
+            <span class="moon"></span><span class="owl">◉v◉</span><span class="steps">⌁ ⌁ ⌁</span>
           </div>
           <div class="project-copy">
-            <span class="number">01 / PLAY</span>
+            <span class="number">01 / PLAY · GAME</span>
             <h3>もふ梟の迷宮狩り</h3>
-            <p>梟と迷宮へ潜る、手のひらサイズのローグライク。</p>
+            <p>梟と迷宮へ潜る、手のひらサイズのローグライク。遊びたい世界を、すぐ触れるWebゲームにしました。</p>
+            <ul class="project-details">
+              <li>ターン制の探索と戦闘</li>
+              <li>ブラウザだけで遊べる軽い設計</li>
+            </ul>
             <span class="open">作品をひらく ↗</span>
           </div>
         </a>
 
         <a class="project" data-category="play" href="https://ray0308.github.io/trpg-world-archive/index.html" target="_blank" rel="noreferrer">
           <div class="visual archive">
-            <span class="planet"></span>
-            <span class="ring"></span>
-            <span class="pin">Y</span>
+            <span class="planet"></span><span class="ring"></span><span class="pin">Y</span>
           </div>
           <div class="project-copy">
-            <span class="number">02 / PLAY</span>
+            <span class="number">02 / PLAY · TRPG</span>
             <h3>YOKOFOLIA</h3>
-            <p>TRPGの世界と住民を、ふわっと残しておく台帳。</p>
+            <p>増え続けるNPC、組織、シナリオを横断して見返すためのTRPG世界観アーカイブ。</p>
+            <ul class="project-details">
+              <li>人物と世界設定をひとつの場所に整理</li>
+              <li>セッション外でも世界を楽しめる設計</li>
+            </ul>
             <span class="open">作品をひらく ↗</span>
           </div>
         </a>
 
         <a class="project" data-category="work" href="https://fukulog-oeltec.glide.page/" target="_blank" rel="noreferrer">
-          <div class="visual fukulog">
-            <span class="bubble">福</span>
-            <span class="line"></span>
-          </div>
+          <div class="visual fukulog"><span class="bubble">福</span><span class="line"></span></div>
           <div class="project-copy">
-            <span class="number">03 / WORK</span>
+            <span class="number">03 / WORK · GLIDE</span>
             <h3>フクログ</h3>
-            <p>日々の情報を、迷わず扱えるかたちにした業務アプリ。</p>
+            <p>日々の情報を、現場で迷わず扱えるように整理した業務アプリ。</p>
+            <ul class="project-details">
+              <li>入力と確認の動線をシンプルに</li>
+              <li>現場で使いながら小さく改善</li>
+            </ul>
             <span class="open">作品をひらく ↗</span>
           </div>
         </a>
 
         <a class="project" data-category="work" href="https://pine-app-owl.glide.page/" target="_blank" rel="noreferrer">
-          <div class="visual pine">
-            <span class="pinecone">◆<br>◆ ◆<br>◆ ◆ ◆</span>
-          </div>
+          <div class="visual pine"><span class="pinecone">◆<br>◆ ◆<br>◆ ◆ ◆</span></div>
           <div class="project-copy">
-            <span class="number">04 / WORK</span>
+            <span class="number">04 / WORK · GLIDE</span>
             <h3>Pine</h3>
-            <p>現場の動きをすっきり支える、Glide製の業務ツール。</p>
+            <p>現場の情報と動きを支える業務支援ツール。必要な人が必要な情報へ迷わず届く形を目指しました。</p>
+            <ul class="project-details">
+              <li>Glideによる素早い実装</li>
+              <li>運用に合わせて育てられる構成</li>
+            </ul>
             <span class="open">作品をひらく ↗</span>
           </div>
         </a>
 
         <a class="project project-wide" data-category="work" href="https://m-yoko-developer-ops.github.io/output-sheet/" target="_blank" rel="noreferrer">
           <div class="visual sheet">
-            <span class="sheet-title">OUTPUT / SHEET</span>
-            <span class="grid-lines"></span>
-            <span class="cursor"></span>
+            <span class="sheet-title">OUTPUT / SHEET</span><span class="grid-lines"></span><span class="cursor"></span>
           </div>
           <div class="project-copy">
-            <span class="number">05 / WORK</span>
+            <span class="number">05 / WORK · INPUT SUPPORT</span>
             <h3>出数表入力</h3>
-            <p>数字の入力と確認を、軽く・正確にするための専用ツール。</p>
+            <p>繰り返す数字入力と確認を、軽く、正確にするための専用ツール。</p>
+            <ul class="project-details">
+              <li>入力ミスを減らす専用UI</li>
+              <li>毎日の小さな手間を短縮</li>
+            </ul>
             <span class="open">作品をひらく ↗</span>
           </div>
         </a>
       </div>
-      <p class="more-note">and more — ローカルで動く、小さな道具たちも準備中。</p>
     </section>
 
-    <section class="about" id="about">
-      <p class="eyebrow">About this archive</p>
+    <section class="exploring" id="exploring">
+      <div class="exploring-heading">
+        <p class="eyebrow">In progress / Exploring</p>
+        <h2>次につくっているもの</h2>
+        <p>完成品だけでなく、仕事や遊びの中で見つけた「これがあるといい」を育てています。</p>
+      </div>
+      <div class="idea-list">
+        <article><span>01</span><div><h3>OWL in One</h3><p>社員情報、稼働履歴、給与履歴を一元管理する社内アプリ。</p></div><small>社内管理</small></article>
+        <article><span>02</span><div><h3>ハルくん系AIチャット</h3><p>用語解説、逆質問、理解確認を行う社内教育AI。</p></div><small>教育AI</small></article>
+        <article><span>03</span><div><h3>ReCode</h3><p>ソースコードを直しながら進む、ミッション型のプログラミング教材。</p></div><small>ゲーム教材</small></article>
+        <article><span>04</span><div><h3>給与計算ツール</h3><p>CSVの読込から計算、出力までを支援するデスクトップツール。</p></div><small>Python</small></article>
+        <article><span>05</span><div><h3>マスコット時計App</h3><p>コメントや演出でデスクトップに棲む、小さな常駐アプリ。</p></div><small>個人制作</small></article>
+      </div>
+    </section>
+
+    <section class="statement">
+      <p class="eyebrow">Beyond work</p>
       <div>
         <h2>面倒を減らす。<br>面白さを増やす。</h2>
-        <p>ゲーム、記録、業務ツール。ジャンルにこだわらず、自分や誰かが「これ、あるといいな」と思ったものを形にしています。</p>
+        <p>TRPG、ゲーム、キャンプ、料理。遊びの中で出てきた「これ欲しい」も、仕事で見つけた「ここが面倒」も、同じ熱量で形にします。</p>
       </div>
     </section>
   </main>
